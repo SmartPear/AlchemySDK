@@ -1,0 +1,694 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		001A80D7219035CF0032EC7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001A80D6219035CF0032EC7A /* AppDelegate.swift */; };
+		001A80D9219035CF0032EC7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001A80D8219035CF0032EC7A /* ViewController.swift */; };
+		001A80DC219035CF0032EC7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 001A80DA219035CF0032EC7A /* Main.storyboard */; };
+		001A80DE219035D10032EC7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 001A80DD219035D10032EC7A /* Assets.xcassets */; };
+		001A80E1219035D10032EC7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 001A80DF219035D10032EC7A /* LaunchScreen.storyboard */; };
+		001A80EC219035D10032EC7A /* AlchemyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001A80EB219035D10032EC7A /* AlchemyUITests.swift */; };
+		001A80FC219037BA0032EC7A /* NetWorkApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001A80F8219037BA0032EC7A /* NetWorkApi.swift */; };
+		001A80FD219037BA0032EC7A /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001A80F9219037BA0032EC7A /* Wallet.swift */; };
+		001A80FE219037BA0032EC7A /* Web3swiftService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001A80FA219037BA0032EC7A /* Web3swiftService.swift */; };
+		001A80FF219037BA0032EC7A /* KeysService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001A80FB219037BA0032EC7A /* KeysService.swift */; };
+		001A8100219039210032EC7A /* KeysService.swift in Headers */ = {isa = PBXBuildFile; fileRef = 001A80FB219037BA0032EC7A /* KeysService.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		001A8101219039210032EC7A /* NetWorkApi.swift in Headers */ = {isa = PBXBuildFile; fileRef = 001A80F8219037BA0032EC7A /* NetWorkApi.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		001A8102219039210032EC7A /* Wallet.swift in Headers */ = {isa = PBXBuildFile; fileRef = 001A80F9219037BA0032EC7A /* Wallet.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		001A8103219039210032EC7A /* Web3swiftService.swift in Headers */ = {isa = PBXBuildFile; fileRef = 001A80FA219037BA0032EC7A /* Web3swiftService.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		00ACEB942189AE2F00EE984D /* AlchemySDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 00ACEB922189AE2F00EE984D /* AlchemySDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25B58803DBFD7F18645911F5 /* Pods_AlchemySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B35DA7F7ED1B3671569D8C19 /* Pods_AlchemySDK.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		001A80E8219035D10032EC7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00ACEB862189AE2F00EE984D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 001A80D3219035CF0032EC7A;
+			remoteInfo = Alchemy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		001A80B921902A180032EC7A /* BigInt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BigInt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		001A80D4219035CF0032EC7A /* Alchemy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alchemy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		001A80D6219035CF0032EC7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		001A80D8219035CF0032EC7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		001A80DB219035CF0032EC7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		001A80DD219035D10032EC7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		001A80E0219035D10032EC7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		001A80E2219035D10032EC7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		001A80E7219035D10032EC7A /* AlchemyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlchemyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		001A80EB219035D10032EC7A /* AlchemyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlchemyUITests.swift; sourceTree = "<group>"; };
+		001A80ED219035D10032EC7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		001A80F8219037BA0032EC7A /* NetWorkApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkApi.swift; sourceTree = "<group>"; };
+		001A80F9219037BA0032EC7A /* Wallet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
+		001A80FA219037BA0032EC7A /* Web3swiftService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Web3swiftService.swift; sourceTree = "<group>"; };
+		001A80FB219037BA0032EC7A /* KeysService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeysService.swift; sourceTree = "<group>"; };
+		00ACEB8F2189AE2F00EE984D /* AlchemySDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlchemySDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		00ACEB922189AE2F00EE984D /* AlchemySDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlchemySDK.h; sourceTree = "<group>"; };
+		00ACEB932189AE2F00EE984D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B35DA7F7ED1B3671569D8C19 /* Pods_AlchemySDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlchemySDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9FFE3F5517BFD83579241DE /* Pods-AlchemySDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlchemySDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlchemySDK/Pods-AlchemySDK.debug.xcconfig"; sourceTree = "<group>"; };
+		F6F4AEE0BE9F9D11F6B90B63 /* Pods-AlchemySDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlchemySDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlchemySDK/Pods-AlchemySDK.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		001A80D1219035CF0032EC7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		001A80E4219035D10032EC7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00ACEB8C2189AE2F00EE984D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25B58803DBFD7F18645911F5 /* Pods_AlchemySDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		001A80D5219035CF0032EC7A /* Alchemy */ = {
+			isa = PBXGroup;
+			children = (
+				001A80D6219035CF0032EC7A /* AppDelegate.swift */,
+				001A80D8219035CF0032EC7A /* ViewController.swift */,
+				001A80DA219035CF0032EC7A /* Main.storyboard */,
+				001A80DD219035D10032EC7A /* Assets.xcassets */,
+				001A80DF219035D10032EC7A /* LaunchScreen.storyboard */,
+				001A80E2219035D10032EC7A /* Info.plist */,
+			);
+			path = Alchemy;
+			sourceTree = "<group>";
+		};
+		001A80EA219035D10032EC7A /* AlchemyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				001A80EB219035D10032EC7A /* AlchemyUITests.swift */,
+				001A80ED219035D10032EC7A /* Info.plist */,
+			);
+			path = AlchemyUITests;
+			sourceTree = "<group>";
+		};
+		00ACEB852189AE2F00EE984D = {
+			isa = PBXGroup;
+			children = (
+				00ACEB912189AE2F00EE984D /* AlchemySDK */,
+				001A80D5219035CF0032EC7A /* Alchemy */,
+				001A80EA219035D10032EC7A /* AlchemyUITests */,
+				00ACEB902189AE2F00EE984D /* Products */,
+				A4748CEA66CD3AD6FD19E3D5 /* Pods */,
+				EEA7F01469E3BCB96F57F4A6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		00ACEB902189AE2F00EE984D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00ACEB8F2189AE2F00EE984D /* AlchemySDK.framework */,
+				001A80D4219035CF0032EC7A /* Alchemy.app */,
+				001A80E7219035D10032EC7A /* AlchemyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00ACEB912189AE2F00EE984D /* AlchemySDK */ = {
+			isa = PBXGroup;
+			children = (
+				001A80FB219037BA0032EC7A /* KeysService.swift */,
+				001A80F8219037BA0032EC7A /* NetWorkApi.swift */,
+				001A80F9219037BA0032EC7A /* Wallet.swift */,
+				001A80FA219037BA0032EC7A /* Web3swiftService.swift */,
+				00ACEB922189AE2F00EE984D /* AlchemySDK.h */,
+				00ACEB932189AE2F00EE984D /* Info.plist */,
+			);
+			path = AlchemySDK;
+			sourceTree = "<group>";
+		};
+		A4748CEA66CD3AD6FD19E3D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9FFE3F5517BFD83579241DE /* Pods-AlchemySDK.debug.xcconfig */,
+				F6F4AEE0BE9F9D11F6B90B63 /* Pods-AlchemySDK.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EEA7F01469E3BCB96F57F4A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				001A80B921902A180032EC7A /* BigInt.framework */,
+				B35DA7F7ED1B3671569D8C19 /* Pods_AlchemySDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		00ACEB8A2189AE2F00EE984D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00ACEB942189AE2F00EE984D /* AlchemySDK.h in Headers */,
+				001A8100219039210032EC7A /* KeysService.swift in Headers */,
+				001A8101219039210032EC7A /* NetWorkApi.swift in Headers */,
+				001A8102219039210032EC7A /* Wallet.swift in Headers */,
+				001A8103219039210032EC7A /* Web3swiftService.swift in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		001A80D3219035CF0032EC7A /* Alchemy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 001A80EE219035D10032EC7A /* Build configuration list for PBXNativeTarget "Alchemy" */;
+			buildPhases = (
+				001A80D0219035CF0032EC7A /* Sources */,
+				001A80D1219035CF0032EC7A /* Frameworks */,
+				001A80D2219035CF0032EC7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alchemy;
+			productName = Alchemy;
+			productReference = 001A80D4219035CF0032EC7A /* Alchemy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		001A80E6219035D10032EC7A /* AlchemyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 001A80F1219035D10032EC7A /* Build configuration list for PBXNativeTarget "AlchemyUITests" */;
+			buildPhases = (
+				001A80E3219035D10032EC7A /* Sources */,
+				001A80E4219035D10032EC7A /* Frameworks */,
+				001A80E5219035D10032EC7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				001A80E9219035D10032EC7A /* PBXTargetDependency */,
+			);
+			name = AlchemyUITests;
+			productName = AlchemyUITests;
+			productReference = 001A80E7219035D10032EC7A /* AlchemyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		00ACEB8E2189AE2F00EE984D /* AlchemySDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00ACEB972189AE2F00EE984D /* Build configuration list for PBXNativeTarget "AlchemySDK" */;
+			buildPhases = (
+				5B825163C4BF3DFEFD8C1FE7 /* [CP] Check Pods Manifest.lock */,
+				00ACEB8A2189AE2F00EE984D /* Headers */,
+				00ACEB8B2189AE2F00EE984D /* Sources */,
+				00ACEB8C2189AE2F00EE984D /* Frameworks */,
+				00ACEB8D2189AE2F00EE984D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlchemySDK;
+			productName = AlchemySDK;
+			productReference = 00ACEB8F2189AE2F00EE984D /* AlchemySDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00ACEB862189AE2F00EE984D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = miaomiao;
+				TargetAttributes = {
+					001A80D3219035CF0032EC7A = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					001A80E6219035D10032EC7A = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 001A80D3219035CF0032EC7A;
+					};
+					00ACEB8E2189AE2F00EE984D = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1010;
+					};
+				};
+			};
+			buildConfigurationList = 00ACEB892189AE2F00EE984D /* Build configuration list for PBXProject "AlchemySDK" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00ACEB852189AE2F00EE984D;
+			productRefGroup = 00ACEB902189AE2F00EE984D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00ACEB8E2189AE2F00EE984D /* AlchemySDK */,
+				001A80D3219035CF0032EC7A /* Alchemy */,
+				001A80E6219035D10032EC7A /* AlchemyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		001A80D2219035CF0032EC7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				001A80E1219035D10032EC7A /* LaunchScreen.storyboard in Resources */,
+				001A80DE219035D10032EC7A /* Assets.xcassets in Resources */,
+				001A80DC219035CF0032EC7A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		001A80E5219035D10032EC7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00ACEB8D2189AE2F00EE984D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5B825163C4BF3DFEFD8C1FE7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlchemySDK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		001A80D0219035CF0032EC7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				001A80D9219035CF0032EC7A /* ViewController.swift in Sources */,
+				001A80D7219035CF0032EC7A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		001A80E3219035D10032EC7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				001A80EC219035D10032EC7A /* AlchemyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00ACEB8B2189AE2F00EE984D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				001A80FE219037BA0032EC7A /* Web3swiftService.swift in Sources */,
+				001A80FF219037BA0032EC7A /* KeysService.swift in Sources */,
+				001A80FD219037BA0032EC7A /* Wallet.swift in Sources */,
+				001A80FC219037BA0032EC7A /* NetWorkApi.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		001A80E9219035D10032EC7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 001A80D3219035CF0032EC7A /* Alchemy */;
+			targetProxy = 001A80E8219035D10032EC7A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		001A80DA219035CF0032EC7A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				001A80DB219035CF0032EC7A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		001A80DF219035D10032EC7A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				001A80E0219035D10032EC7A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		001A80EF219035D10032EC7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VZFZ9L29U3;
+				INFOPLIST_FILE = Alchemy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AlchemyFoundation.Alchemy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		001A80F0219035D10032EC7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VZFZ9L29U3;
+				INFOPLIST_FILE = Alchemy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AlchemyFoundation.Alchemy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		001A80F2219035D10032EC7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VZFZ9L29U3;
+				INFOPLIST_FILE = AlchemyUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AlchemyFoundation.AlchemyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Alchemy;
+			};
+			name = Debug;
+		};
+		001A80F3219035D10032EC7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VZFZ9L29U3;
+				INFOPLIST_FILE = AlchemyUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AlchemyFoundation.AlchemyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Alchemy;
+			};
+			name = Release;
+		};
+		00ACEB952189AE2F00EE984D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		00ACEB962189AE2F00EE984D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		00ACEB982189AE2F00EE984D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9FFE3F5517BFD83579241DE /* Pods-AlchemySDK.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = VZFZ9L29U3;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = AlchemySDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = AlchemyFoundation.AlchemySDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		00ACEB992189AE2F00EE984D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6F4AEE0BE9F9D11F6B90B63 /* Pods-AlchemySDK.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = VZFZ9L29U3;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = AlchemySDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = AlchemyFoundation.AlchemySDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		001A80EE219035D10032EC7A /* Build configuration list for PBXNativeTarget "Alchemy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				001A80EF219035D10032EC7A /* Debug */,
+				001A80F0219035D10032EC7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		001A80F1219035D10032EC7A /* Build configuration list for PBXNativeTarget "AlchemyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				001A80F2219035D10032EC7A /* Debug */,
+				001A80F3219035D10032EC7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00ACEB892189AE2F00EE984D /* Build configuration list for PBXProject "AlchemySDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00ACEB952189AE2F00EE984D /* Debug */,
+				00ACEB962189AE2F00EE984D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00ACEB972189AE2F00EE984D /* Build configuration list for PBXNativeTarget "AlchemySDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00ACEB982189AE2F00EE984D /* Debug */,
+				00ACEB992189AE2F00EE984D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00ACEB862189AE2F00EE984D /* Project object */;
+}
