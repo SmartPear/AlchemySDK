@@ -158,7 +158,7 @@ public class Web3swiftService {
     ///   - gasPrice:
     ///   - token:
     ///   - completion: 完成的回调
-    func sendTranstion(
+   fileprivate func sendTranstion(
         toAddress:String,
         amount:String,
         gasLimit:BigUInt = BigUInt(21000),
