@@ -65,7 +65,7 @@ public class Web3swiftService {
     //   - queue: 设置线程，默认goble
     //   - group: 传入线程组
     //   - complete: 完成的回调
-    func  GetBalanceWith(
+    fileprivate func  GetBalanceWith(
         toKen:TokenApi = .Eth,
         queue:DispatchQueue = DispatchQueue.global(),
         group:DispatchGroup = DispatchGroup.init(),
@@ -207,7 +207,6 @@ public class Web3swiftService {
                     case .none:
                         let err = Web3Error.inputError(desc: "未知错误")
                         completion(nil,err);
-                        print("aaaaa")
                     }
                 }
             }else{
