@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = "AlchemySDK"
-s.version          = "0.0.2"
+s.version          = "0.0.4"
 s.summary          = "Web3 implementation in vanilla Swift for iOS ans macOS"
 s.description      = <<-DESC
 钱包创建和交易查询，包括雷电网络一些基础功能的应用，通过该SDK可以快速集成以太坊钱包功能
