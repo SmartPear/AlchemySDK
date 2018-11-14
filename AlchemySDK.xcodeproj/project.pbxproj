@@ -17,10 +17,6 @@
 		001A80FD219037BA0032EC7A /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001A80F9219037BA0032EC7A /* Wallet.swift */; };
 		001A80FE219037BA0032EC7A /* Web3swiftService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001A80FA219037BA0032EC7A /* Web3swiftService.swift */; };
 		001A80FF219037BA0032EC7A /* KeysService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001A80FB219037BA0032EC7A /* KeysService.swift */; };
-		001A8100219039210032EC7A /* KeysService.swift in Headers */ = {isa = PBXBuildFile; fileRef = 001A80FB219037BA0032EC7A /* KeysService.swift */; settings = {ATTRIBUTES = (Private, ); }; };
-		001A8101219039210032EC7A /* NetWorkApi.swift in Headers */ = {isa = PBXBuildFile; fileRef = 001A80F8219037BA0032EC7A /* NetWorkApi.swift */; };
-		001A8102219039210032EC7A /* Wallet.swift in Headers */ = {isa = PBXBuildFile; fileRef = 001A80F9219037BA0032EC7A /* Wallet.swift */; };
-		001A8103219039210032EC7A /* Web3swiftService.swift in Headers */ = {isa = PBXBuildFile; fileRef = 001A80FA219037BA0032EC7A /* Web3swiftService.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		00ACEB942189AE2F00EE984D /* AlchemySDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 00ACEB922189AE2F00EE984D /* AlchemySDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		25B58803DBFD7F18645911F5 /* Pods_AlchemySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B35DA7F7ED1B3671569D8C19 /* Pods_AlchemySDK.framework */; };
 /* End PBXBuildFile section */
@@ -168,10 +164,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				00ACEB942189AE2F00EE984D /* AlchemySDK.h in Headers */,
-				001A8103219039210032EC7A /* Web3swiftService.swift in Headers */,
-				001A8100219039210032EC7A /* KeysService.swift in Headers */,
-				001A8101219039210032EC7A /* NetWorkApi.swift in Headers */,
-				001A8102219039210032EC7A /* Wallet.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -609,7 +601,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
+				MACH_O_TYPE = mh_dylib;
 				PRODUCT_BUNDLE_IDENTIFIER = AlchemyFoundation.AlchemySDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -640,7 +632,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
+				MACH_O_TYPE = mh_dylib;
 				PRODUCT_BUNDLE_IDENTIFIER = AlchemyFoundation.AlchemySDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
